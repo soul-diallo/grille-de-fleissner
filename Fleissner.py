@@ -21,12 +21,20 @@ def completion(text, n):
     return text
 
 
-def rotation(grid):
+def rotation(grid, n, clock):
     tab = []
-    for i in range(len(grid)):
-        for k in range(len(grid[i])):
-            tab.append(grid[k][len(grid) - 1 - i])
+    for i in range(n):
+        for k in range(n):
+            tab.append(grid[k][len(grid)-1-i])
     return tab
+
+
+print(len([[0, 1, 0, 1, 0, 1],
+            [0, 0, 0, 0, 1, 0],
+            [0, 0, 1, 0, 0, 0],
+            [0, 1, 0, 0, 1, 0],
+            [0, 0, 0, 0, 0, 1],
+            [0, 0, 0, 1, 0, 0]]))
 
 
 def correct(grid, n):
