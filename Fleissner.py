@@ -23,18 +23,21 @@ def completion(text, n):
 
 def rotation(grid, n, clock):
     tab = []
+    cpt = 0
     for i in range(n):
+        tab += [[]]
         for k in range(n):
-            tab.append(grid[k][len(grid)-1-i])
+            tab[cpt] += [grid[k][len(grid) - 1 - i]]
+        cpt += 1
     return tab
 
 
-print(len([[0, 1, 0, 1, 0, 1],
-            [0, 0, 0, 0, 1, 0],
-            [0, 0, 1, 0, 0, 0],
-            [0, 1, 0, 0, 1, 0],
-            [0, 0, 0, 0, 0, 1],
-            [0, 0, 0, 1, 0, 0]]))
+# # print(len([[0, 1, 0, 1, 0, 1],
+#            [0, 0, 0, 0, 1, 0],
+#            [0, 0, 1, 0, 0, 0],
+#            [0, 1, 0, 0, 1, 0],
+#            [0, 0, 0, 0, 0, 1],
+#            [0, 0, 0, 1, 0, 0]]))
 
 
 def correct(grid, n):
