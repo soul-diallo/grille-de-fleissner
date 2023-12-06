@@ -5,7 +5,7 @@ import string
 txt = "gangsta rap! iu éééééeee"
 x = re.sub('é', "e", txt)
 
-y = 'Garo'
+y = 'Lynx'
 aleaStr = ''
 alpha = string.ascii_lowercase
 print(alpha)
